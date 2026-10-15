@@ -1,4 +1,7 @@
-from employee import Employee
+# Importo la classe Employee dal modulo employee
+# che fa parte/si trova nel package companies
+
+from companies.employee import Employee
 
 class Manager(Employee): # Classe che deriva da Employee
     def __init__(self, name, wage, managedUnit):

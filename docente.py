@@ -15,3 +15,7 @@ class Docente (Persona):
         # Poi si vanno ad inizializzare gli attributi specifici del Docente
         self.dipartimento = dipartimento
 
+
+    def __str__(self):
+        #return f"{self.__nome} {self.__cognome} {self.dipartimento}"
+        return f"{super().__str__()} {self.dipartimento}"
